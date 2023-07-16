@@ -26,7 +26,8 @@ $ git clone https://github.com/adavarski/homelab-argocd
 - [Docker](https://docs.docker.com/engine/install/ubuntu/)
 - [Go Task](https://taskfile.dev/installation)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
-- [KiD]([https://k3d.io/#installation](https://kind.sigs.k8s.io/docs/user/quick-start/)) 
+- [KiD](https://kind.sigs.k8s.io/docs/user/quick-start/)
+- [ArgoCD CLI](https://argo-cd.readthedocs.io/en/stable/cli_installation/)
 
  Note: repo Docs -> Install [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/#latest) including [image processing dependencies](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing)
 
