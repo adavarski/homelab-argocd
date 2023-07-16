@@ -2,8 +2,6 @@
 
 Fully automated Kubernetes and GitOps setup to host my important services at home.
 
-Note: K3s is a lightweight K8s distribution. K3d is a wrapper to run K3s in Docker. K3d/K3s are especially good for development and CI purposes.
-
 
 Note: We can use GitHub repos (`APPS repos`) and GitHub Actions (GitOps CI) to build docker images. Once CI execution is done, the artifact will be pushed (push containers images to docker registry & setup images tags in this `INFRA repo` apps folder: helm charts or k8s manifests + kustomize) and ArgoCD will be taking care of the CD -> Ref: https://github.com/adavarski/ArgoCD-GitOps-playground && https://github.com/adavarski/k3d-GH-Actions && https://github.com/adavarski/gitops-k3d-tekton-argocd (example using Tekton to build/push docker images: Golang) && https://github.com/adavarski/gitops-k3d-tekton-argocd (example using Tekton to build/test/push docker images: Java & Maven)
 
@@ -28,7 +26,7 @@ $ git clone https://github.com/adavarski/homelab-argocd
 - [Docker](https://docs.docker.com/engine/install/ubuntu/)
 - [Go Task](https://taskfile.dev/installation)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
-- [k3d](https://k3d.io/#installation) 
+- [KiD]([https://k3d.io/#installation](https://kind.sigs.k8s.io/docs/user/quick-start/)) 
 
  Note: repo Docs -> Install [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/#latest) including [image processing dependencies](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing)
 
@@ -113,4 +111,4 @@ $ task dev:cleanup
 - Add SOPS (Secrets with Kustomize and SOPS: https://cloud.redhat.com/blog/a-guide-to-gitops-and-secret-management-with-argocd-operator-and-sops)
 - helm install ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --create-namespace --set controller.publishService.enabled=true --wait
 
-Note: ssl passthrough has to be enabled for argocd grpc to work. The configuration provided for split ingress in argocd documentation doesn't work. UI login is successfull. However cli login doesn't work -> Argo CLI : `helm upgrade ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --create-namespace --set controller.publishService.enabled=true --set controller.extraArgs.enable-ssl-passthrough=true`
+
