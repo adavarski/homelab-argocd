@@ -82,9 +82,9 @@ monitoring   monitoring-kube-prometheus-prometheus   nginx   prometheus.192.168.
 #### Screenshots
 
 Browser: 
-- ArgoCD: http://argocd.192.168.1.99.nip.io:8888
-- Prometheus: http://prometheus.192.168.1.99.nip.io:8888
-- Grafana: http://grafana.192.168.1.99.nip.io:8888
+- ArgoCD: http://argocd.192.168.1.99.nip.io
+- Prometheus: http://prometheus.192.168.1.99.nip.io
+- Grafana: http://grafana.192.168.1.99.nip.io
 
 | ArgoCD |
 | :--: |
