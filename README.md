@@ -92,7 +92,7 @@ Browser:
 | :--: |
 | ![ArgoCD dashboard screenshot](docs/images/homelab-argocd-argocd.png) |
 | Prometheus |
-| ![Grafana dashboard screenshot](docs/images/homelab-argocd-prometheus.png) |
+| ![Grafana dashboard screenshot](docs/images/homelab-grafana.png) |
 | Grafana |
 | ![Grafana dashboard screenshot](docs/images/homelab-argocd-grafana.png) |
 
