@@ -67,7 +67,6 @@ task: Available tasks for this project:
 $ task scripts:argocd-admin-password
 $ task scripts:grafana-admin-password
 ```
-
 Ingresses:
 
 ```bash
@@ -79,7 +78,6 @@ element      element-elementweb                      nginx   chat.192.168.1.99.n
 excalidraw   excalidraw                              nginx   draw.192.168.1.99.nip.io         172.28.0.2   80      93m
 monitoring   monitoring-kube-prometheus-prometheus   nginx   prometheus.192.168.1.99.nip.io   172.28.0.2   80      93m
 ```
-
 ArgoCD CLI:
 
 ```
@@ -103,7 +101,6 @@ argocd-server: v2.6.0+acc554f
   Kubectl Version: v0.24.2
   Jsonnet Version: v0.19.1
 
-
 $ argocd login --insecure argocd.192.168.1.99.nip.io --grpc-web
 Username: admin
 Password: 
@@ -120,8 +117,6 @@ argocd/loki         in-cluster  loki         default  Synced     Healthy   Auto-
 argocd/monitoring   in-cluster  monitoring   default  Synced     Healthy   Auto-Prune  <none>      https://github.com/adavarski/homelab-argocd  system/monitoring   main
 argocd/root         in-cluster  argocd       default  Synced     Degraded  Auto-Prune  <none>      https://github.com/adavarski/homelab-argocd  bootstrap/root      main
 argocd/speedtest    in-cluster  speedtest    default  Synced     Healthy   Auto-Prune  <none>      https://github.com/adavarski/homelab-argocd  apps/speedtest      main
-
-
 ```
 
 #### Screenshots
