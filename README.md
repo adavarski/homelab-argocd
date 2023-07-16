@@ -77,6 +77,24 @@ element      element-elementweb                      nginx   chat.192.168.1.99.n
 excalidraw   excalidraw                              nginx   draw.192.168.1.99.nip.io         172.28.0.2   80      93m
 monitoring   monitoring-kube-prometheus-prometheus   nginx   prometheus.192.168.1.99.nip.io   172.28.0.2   80      93m
 
+$ argocd login --insecure argocd.192.168.1.99.nip.io --grpc-web
+Username: admin
+Password: 
+'admin:login' logged in successfully
+Context 'argocd.192.168.1.99.nip.io' updated
+
+$ argocd app list
+NAME                CLUSTER     NAMESPACE    PROJECT  STATUS     HEALTH    SYNCPOLICY  CONDITIONS  REPO                                         PATH                TARGET
+argocd/argocd       in-cluster  argocd       default  OutOfSync  Healthy   Auto-Prune  <none>      https://github.com/adavarski/homelab-argocd  bootstrap/argocd    main
+argocd/descheduler  in-cluster  descheduler  default  Synced     Healthy   Auto-Prune  <none>      https://github.com/adavarski/homelab-argocd  system/descheduler  main
+argocd/element      in-cluster  element      default  Synced     Healthy   Auto-Prune  <none>      https://github.com/adavarski/homelab-argocd  apps/element        main
+argocd/excalidraw   in-cluster  excalidraw   default  Synced     Healthy   Auto-Prune  <none>      https://github.com/adavarski/homelab-argocd  apps/excalidraw     main
+argocd/loki         in-cluster  loki         default  Synced     Healthy   Auto-Prune  <none>      https://github.com/adavarski/homelab-argocd  system/loki         main
+argocd/monitoring   in-cluster  monitoring   default  Synced     Healthy   Auto-Prune  <none>      https://github.com/adavarski/homelab-argocd  system/monitoring   main
+argocd/root         in-cluster  argocd       default  Synced     Degraded  Auto-Prune  <none>      https://github.com/adavarski/homelab-argocd  bootstrap/root      main
+argocd/speedtest    in-cluster  speedtest    default  Synced     Healthy   Auto-Prune  <none>      https://github.com/adavarski/homelab-argocd  apps/speedtest      main
+
+
 ```
 
 #### Screenshots
