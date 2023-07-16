@@ -90,15 +90,15 @@ Browser:
 
 | ArgoCD |
 | :--: |
-| ![ArgoCD dashboard screenshot](docs/images/homelab-argocd-argocd.png) |
+| ![ArgoCD dashboard screenshot](docs/images/homelab-argocd.png) |
 | Prometheus |
-| ![Grafana dashboard screenshot](docs/images/homelab-grafana.png) |
+| ![Grafana dashboard screenshot](docs/images/homelab-prometheus.png) |
 | Grafana |
-| ![Grafana dashboard screenshot](docs/images/homelab-argocd-grafana.png) |
+| ![Grafana dashboard screenshot](docs/images/homelab-grafana.png) |
 
 Note: We can import the example Dashboard for Argo CD. The dashboard can be found in the GitHub repository of the Argo CD project at https://github.com/argoproj/argo-cd/blob/master/examples/dashboard.json.
 
- ![Grafana dashboard screenshot](docs/images/homelab-argocd-grafana-argocd-dashboard.png) 
+ ![Grafana dashboard screenshot](docs/images/homelab-grafana-argocd-dashboard.png) 
 
 ### Clean up
 
