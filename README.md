@@ -67,6 +67,7 @@ task: Available tasks for this project:
 $ task scripts:argocd-admin-password
 $ task scripts:grafana-admin-password
 ```
+
 Ingresses:
 
 ```bash
@@ -77,6 +78,31 @@ monitoring   monitoring-grafana                      nginx   grafana.192.168.1.9
 element      element-elementweb                      nginx   chat.192.168.1.99.nip.io         172.28.0.2   80      93m
 excalidraw   excalidraw                              nginx   draw.192.168.1.99.nip.io         172.28.0.2   80      93m
 monitoring   monitoring-kube-prometheus-prometheus   nginx   prometheus.192.168.1.99.nip.io   172.28.0.2   80      93m
+```
+
+ArgoCD CLI:
+
+```
+$ argocd version
+argocd: v2.7.6+00c914a
+  BuildDate: 2023-06-20T21:18:20Z
+  GitCommit: 00c914a948d9e8ad99be8bd82a368fbdeba12f88
+  GitTreeState: clean
+  GoVersion: go1.19.10
+  Compiler: gc
+  Platform: linux/amd64
+argocd-server: v2.6.0+acc554f
+  BuildDate: 2023-02-06T21:17:26Z
+  GitCommit: acc554f3d99010e0353b498a595844b30090556f
+  GitTreeState: clean
+  GoVersion: go1.18.10
+  Compiler: gc
+  Platform: linux/amd64
+  Kustomize Version: v4.5.7 2022-08-02T16:35:54Z
+  Helm Version: v3.10.3+g835b733
+  Kubectl Version: v0.24.2
+  Jsonnet Version: v0.19.1
+
 
 $ argocd login --insecure argocd.192.168.1.99.nip.io --grpc-web
 Username: admin
